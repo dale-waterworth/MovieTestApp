@@ -1,0 +1,23 @@
+<div>
+  <form>
+  <div class="movieSearchWrapper">
+    <div>
+      Search a movie
+    </div>
+	  <div class="movieSearch">
+	    <input type="text" placeholder="{{suggestedTitle || 'Search for movie'}}" 
+	       ng-model="movie.searchTerm" ng-change="searchMovie()" ng-keyup="keyPress($event)">
+	  </div>
+	  <div ng-hide="hideResulst">
+		  <div ng-repeat="movie in movie.listings" class="moviewResults" ng-class="movie.first ? 'highlight' : '' ">
+	      {{movie.Title}}      
+	    </div>
+	  </div>
+  </div>
+    <div ng-show="callingServer">Loading</div>
+    <div>
+      
+    </div>
+  </form>
+  
+</div>

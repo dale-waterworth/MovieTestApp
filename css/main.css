@@ -1,0 +1,44 @@
+.movieHeader{
+	/* background-color: #000000;
+	color: ffffff; */
+	text-align: center;
+}
+
+.movieSearchWrap {
+	padding: 10px;
+	border: 1pt solid #000000;
+}
+
+.movieSearchWrapper{
+	margin: 0 auto;
+	
+}
+.movieSearch input[type=text]{
+	width: 200px;
+	text-align: center;
+	padding: 10px;
+	
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	
+}
+
+.moviewResults{
+	width: 200px;
+  text-align: center;
+  padding: 10px;
+  border: 1pt solid #000000;
+}
+.highlight{
+	background-color: #80ffff;
+}
+.link{
+	text-decoration: underline;
+	cursor: pointer; 
+	display: inline;
+}
+.libList{
+	padding: 10px;
+	border: solid 1pt black;
+}

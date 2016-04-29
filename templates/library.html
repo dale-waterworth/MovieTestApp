@@ -1,0 +1,46 @@
+<div>
+  <div>
+    Library store
+  </div>
+
+ <library local-movies="localMovies" found-movie="foundMovie"></library>
+  
+<div ng-show="foundMovie.Title">
+  <h1>Found</h1>
+  <div>
+    Title: {{foundMovie.Title}}
+    Genre: {{foundMovie.Genre}}
+  </div>
+</div>
+
+
+
+
+<div>
+  <h1>Library list</h1>
+  <select>
+  <option ng-repeat="genre in genres">{{genre}}</option>
+</select>
+  <div ng-repeat="m in localMovies" class="libList">
+	  <div>
+	    <div>
+	      Title: <input type="text" ng-model="m.Title">
+	    </div>
+	    <div>
+	      Director: <input type="text" ng-model="m.Director">
+	    </div>
+	    <div>
+	    Genre: {{m.Genre}}
+	    </div>
+	    <div>
+	     <img src="{{m.Poster}}" alt="m.Title"> 
+	    </div>
+	    <div>
+	     <button ng-click="updateMovie(m)">Save</button>
+	    </div>
+	    
+	  </div>
+  {{m|json}}
+  </div>
+</div>
+</div>
